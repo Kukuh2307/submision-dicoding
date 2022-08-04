@@ -41,7 +41,7 @@ nav {
   padding: 1rem;
 }
 .btn {
-  background-color: var(--primary-color);
+  background-color: var(--border);
   border-radius: 0.5rem;
   height: 4rem;
   padding: 1.5rem 2rem;
@@ -51,8 +51,8 @@ nav {
   align-items: center;
 }
 .btn:hover {
-  color: var(--green-color);
-  transition: all 1s linear;
+  color: var(--primary-color);
+  transition: all 0.5s linear;
   background-color: white;
 }
 .header {
@@ -116,9 +116,11 @@ nav {
   position: absolute;
   margin-top: 4.5rem;
 }
-.content h2 {
+.content .image .tittle h2 {
   font-size: 3rem;
   color: var(--primary-color);
+  display: inline-block;
+  width: 75%;
 }
 .content p {
   font-size: 1.4rem;
@@ -181,9 +183,11 @@ section .feature .description .text h3 {
 section .feature .description .text h2 {
   font-size: 2rem;
   padding: 0.5rem 0;
+  color: var(--primary-color);
 }
 section .feature .description .text p {
   font-style: italic;
+  color: var(--primary-color);
 }
 section .feature .box {
   display: flex;
@@ -207,8 +211,215 @@ section .feature .box .items {
   padding: 3rem 3rem;
   margin: 1rem 2rem;
   box-sizing: border-box;
+  box-shadow: var(--box-shadow);
 }
-section .feature .box .items p {
+section .feature .box .items:hover {
+  padding-bottom: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+section .feature .box .items img {
+  width: 5rem;
+  height: 5rem;
+}
+section .feature .box .items p,
+section .feature .box .items h2 {
   margin-top: 1.5rem;
   font-style: italic;
+  color: var(--primary-color);
+}
+section .feature .box .items p {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+section .feature .box .items img {
+  fill: var(--primary-color);
+}
+section .benefit h2 {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: var(--green-color);
+  text-align: center;
+}
+section .benefit p {
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-style: italic;
+}
+section .benefit-img {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+section .benefit-img .items {
+  background-color: var(--border);
+  width: 29rem;
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+section .benefit-img .items img {
+  border-radius: 0.5rem;
+}
+section .benefit-img .items h2 {
+  text-align: center;
+  margin: 1.5rem;
+  color: white;
+}
+section .benefit-img .items p {
+  text-align: center;
+  width: 23rem;
+  font-style: italic;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+section .benefit-img .items .properti {
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid white;
+  background-color: var(--border);
+  box-shadow: var(--box-shadow);
+}
+section .benefit-img .items .properti:hover {
+  background-color: var(--primary-color);
+  transition: all 0.5s linear;
+}
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+  margin: 0 3%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+aside .profile .gambar {
+  width: 25rem;
+  height: 30rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  margin: auto;
+}
+aside .profile .gambar img {
+  width: 25rem;
+  position: absolute;
+  top: -9rem;
+}
+aside .profile .description {
+  width: 80%;
+  margin: auto;
+}
+aside .profile .description h2 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 4rem;
+}
+aside .profile .description h2:hover {
+  color: var(--green-color);
+}
+aside .profile .description p {
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-style: italic;
+  border-bottom: 2px solid var(--border);
+}
+aside .profile h3 {
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+aside .profile .sosmed {
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+aside .profile .sosmed svg {
+  fill: var(--primary-color);
+  width: 4rem;
+  height: 4rem;
+  margin: 0 3rem;
+  box-shadow: var(--box-shadow);
+}
+aside .profile .sosmed svg:hover {
+  width: 5rem;
+  fill: var(--green-color);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3%;
+}
+footer .left-side {
+  padding: 2.5rem;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+footer .left-side .logo {
+  display: flex;
+}
+footer .left-side span:hover {
+  color: var(--green-color);
+  font-size: 2rem;
+}
+footer .left-side p {
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--primary-color);
+  text-transform: none;
+}
+footer .center-side {
+  padding: 2.5rem;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+footer .center-side p {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+footer .center-side p a {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+footer .center-side p a:hover {
+  transition: all 1s ease-in-out;
+  border-bottom: 1px solid var(--primary-color);
+}
+footer .right-side {
+  padding: 2.5rem 0;
+  width: 30%;
+}
+footer .right-side .sosmed {
+  display: flex;
+  padding: 1.5rem 0;
+}
+footer .right-side svg {
+  fill: var(--primary-color);
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+  box-shadow: var(--box-shadow);
+}
+footer .right-side svg:hover {
+  fill: var(--green-color);
+  width: 3rem;
+  transition: all 0.5s linear;
+  box-shadow: var(--box-shadow);
 }
