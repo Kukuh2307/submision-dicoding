@@ -101,23 +101,22 @@ nav {
   flex-direction: column;
 }
 .content .image {
-  padding: 0 3rem;
+  padding: 10rem 3rem;
+  margin: 0 3%;
+  margin-top: 12rem;
+  background: url(asset/bg-home.svg) no-repeat;
+  background-size: cover;
+  background-position: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.content .image img {
-  width: 100%;
-  padding-top: 12rem;
-  border-radius: 1rem;
+  border-radius: 0.8%;
 }
 .content .image .tittle {
   text-align: center;
   display: inline-block;
-  width: 100%;
-  padding: 10rem 1rem;
-  position: absolute;
-  margin-top: 4.5rem;
+  width: 100rem;
+  margin: 5rem 0;
 }
 .content .image .tittle h2 {
   font-size: 3rem;
@@ -129,19 +128,24 @@ nav {
   font-size: 1.4rem;
   padding: 1rem 0;
 }
-.content .search-form {
+/* perbaikan */
+.content .image .tittle .search-form {
   width: 50rem;
   height: 5rem;
   display: flex;
   overflow: hidden;
-  margin: auto;
-  top: -12rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
 }
-.content .search-form input {
+.content .image .tittle .search-form input {
   font-size: 1.6rem;
   padding: 0 1.2rem;
-  height: 100%;
-  width: 100%;
+  height: 5rem;
+  width: 80rem;
+}
+.content .image .tittle .search-form label {
+  width: 5rem;
+  height: 5rem;
 }
 section {
   width: 100%;
@@ -425,4 +429,30 @@ footer .right-side svg:hover {
   width: 3rem;
   transition: all 0.5s linear;
   box-shadow: var(--box-shadow);
+}
+
+/* media query */
+@media (max-width: 785px) {
+  section .benefit-img .items {
+    width: 100%;
+  }
+  section .benefit-img .items img {
+    width: 100%;
+  }
+  section .benefit-img .items p {
+    width: 35rem;
+  }
+}
+@media (max-width: 765px) {
+  .navbar {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .content .image .tittle .search-form {
+    width: 35rem;
+  }
+  .content .image {
+    padding: 3rem;
+  }
 }
