@@ -187,27 +187,27 @@ nav {
   width: 5rem;
   height: 5rem;
 }
-section {
+article {
   width: 100%;
   padding: 2rem 3%;
 }
-section .sponsor h2 {
+article .sponsor h2 {
   text-align: center;
   font-size: 2.5rem;
   color: var(--primary-color);
 }
-section .sponsor .logo-brand {
+article .sponsor .logo-brand {
   padding: 3rem;
   display: flex;
   justify-content: space-around;
   border-bottom: 3px solid var(--border);
 }
-section .sponsor .logo-brand img {
+article .sponsor .logo-brand img {
   width: 6rem;
   height: 6rem;
   cursor: pointer;
 }
-section .sponsor .logo-brand img:hover {
+article .sponsor .logo-brand img:hover {
   width: 8rem;
   height: 8rem;
 }
@@ -216,27 +216,27 @@ section .feature {
   border-radius: 0.5rem;
   padding: 2rem 0;
 }
-section .feature .description {
+article .feature .description {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 4rem;
   border-radius: 1rem;
 }
-section .feature .description .text h3 {
+article .feature .description .text h3 {
   color: var(--green-color);
   padding: 0.5rem 0;
 }
-section .feature .description .text h2 {
+article .feature .description .text h2 {
   font-size: 2rem;
   padding: 0.5rem 0;
   color: var(--primary-color);
 }
-section .feature .description .text p {
+article .feature .description .text p {
   font-style: italic;
   color: var(--primary-color);
 }
-section .feature .box {
+article .feature .box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -244,7 +244,7 @@ section .feature .box {
   margin: 2.5rem 0;
   border-radius: 0.5rem;
 }
-section .feature .box .items {
+article .feature .box .items {
   display: flex;
   width: 17rem;
   justify-content: center;
@@ -260,47 +260,47 @@ section .feature .box .items {
   box-sizing: border-box;
   box-shadow: var(--box-shadow);
 }
-section .feature .box .items:hover {
+article .feature .box .items:hover {
   padding-bottom: 2rem;
   transition: all 0.5s ease-in-out;
 }
-section .feature .box .items img {
+article .feature .box .items img {
   width: 5rem;
   height: 5rem;
 }
-section .feature .box .items p,
-section .feature .box .items h2 {
+article .feature .box .items p,
+article .feature .box .items h2 {
   margin-top: 1.5rem;
   font-style: italic;
   color: var(--primary-color);
 }
-section .feature .box .items p {
+article .feature .box .items p {
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--primary-color);
 }
-section .feature .box .items img {
+article .feature .box .items img {
   fill: var(--primary-color);
 }
-section .benefit h2 {
+article .benefit h2 {
   font-size: 2rem;
   padding: 0.5rem 0;
   color: var(--green-color);
   text-align: center;
 }
-section .benefit p {
+article .benefit p {
   font-size: 1rem;
   color: var(--primary-color);
   text-align: center;
   font-style: italic;
 }
-section .benefit-img {
+article .benefit-img {
   margin: 2rem 0;
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-section .benefit-img .items {
+article .benefit-img .items {
   background-color: var(--border);
   width: 29rem;
   overflow: hidden;
@@ -311,22 +311,22 @@ section .benefit-img .items {
   align-items: center;
   margin: 1rem;
 }
-section .benefit-img .items img {
+article .benefit-img .items img {
   border-radius: 0.5rem;
 }
-section .benefit-img .items h2 {
+article .benefit-img .items h2 {
   text-align: center;
   margin: 1.5rem;
   color: white;
 }
-section .benefit-img .items p {
+article .benefit-img .items p {
   text-align: center;
   width: 23rem;
   font-style: italic;
   color: white;
   margin-bottom: 1.5rem;
 }
-section .benefit-img .items .properti {
+article .benefit-img .items .properti {
   width: 10rem;
   padding: 1rem;
   border-radius: 1rem;
@@ -334,7 +334,7 @@ section .benefit-img .items .properti {
   background-color: var(--border);
   box-shadow: var(--box-shadow);
 }
-section .benefit-img .items .properti:hover {
+article .benefit-img .items .properti:hover {
   background-color: var(--primary-color);
   transition: all 0.5s linear;
 }
@@ -473,13 +473,13 @@ footer .right-side svg:hover {
 
 /* media query */
 @media (max-width: 785px) {
-  section .benefit-img .items {
+  article .benefit-img .items {
     width: 100%;
   }
-  section .benefit-img .items img {
+  article .benefit-img .items img {
     width: 100%;
   }
-  section .benefit-img .items p {
+  article .benefit-img .items p {
     width: 35rem;
   }
 }
