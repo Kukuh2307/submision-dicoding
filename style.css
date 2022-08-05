@@ -95,6 +95,47 @@ nav {
   transition: all 1s ease-in-out;
   border-bottom: 1px solid var(--primary-color);
 }
+/* hamburger menu */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.hamburger-menu span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
+.hamburger-menu input {
+  position: absolute;
+  height: 25px;
+  width: 45px;
+  left: -10px;
+  top: -3px;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.hamburger-menu span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.hamburger-menu span:last-child {
+  transform-origin: 0 100%;
+}
+.hamburger-menu input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(2px, -1px);
+}
+.hamburger-menu input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+.hamburger-menu input:checked ~ span:last-child {
+  transform: rotate(-45deg) translate(4px, -1px);
+}
 .content {
   display: flex;
   justify-content: center;
@@ -128,7 +169,6 @@ nav {
   font-size: 1.4rem;
   padding: 1rem 0;
 }
-/* perbaikan */
 .content .image .tittle .search-form {
   width: 50rem;
   height: 5rem;
@@ -443,11 +483,35 @@ footer .right-side svg:hover {
     width: 35rem;
   }
 }
+
 @media (max-width: 765px) {
   .navbar {
-    display: none;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 12rem;
+    height: 80vh;
+    width: 25rem;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+  }
+  .navbar a {
+    text-align: center;
+    margin: 20%;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .navbar.slide {
+    transform: translateX(0);
   }
 }
+
 @media (max-width: 575px) {
   .content .image .tittle .search-form {
     width: 35rem;
